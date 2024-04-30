@@ -1,0 +1,301 @@
+<!-- 
+    What is HTML?
+        HTML stands for Hyper Text Markup Language
+        HTML is the standard markup language for creating Web pages
+        HTML describes the structure of a Web page
+        HTML consists of a series of elements
+        HTML elements tell the browser how to display the content
+        HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link"
+ -->
+
+<!-- 
+    Simple HTML document
+
+                <!DOCTYPE html>
+                    <html>
+                        <head>
+                            <title>Page Title</title>
+                        </head>
+                        <body>
+                            <h1>My First Heading</h1>
+                            <p>My first paragraph.</p>
+
+                        </body>
+                    </html>
+
+
+        The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+        The <html> element is the root element of an HTML page
+        The <head> element contains meta information about the HTML page
+        The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+        The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+        The <h1> element defines a large heading
+        The <p> element defines a paragraph
+
+ -->
+
+<!-- 
+
+    HTML Elements
+        An HTML element is defined by a start tag, some content, and an end tag.
+        The HTML element is everything from the start tag to the end tag:
+
+        <tagname> Content goes here... </tagname>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+
+
+        HTML Attributes
+
+        All HTML elements can have attributes
+        Attributes provide additional information about elements
+        Attributes are always specified in the start tag
+        Attributes usually come in name/value pairs like: name="value"
+
+        The href Attribute
+        The <a> tag defines a hyperlink. The href attribute specifies the URL of the 
+            page the link goes to:
+
+        <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+
+        Block-level Elements
+            A block-level element always starts on a new line, and the browsers 
+            automatically add some space (a margin) before and after the element
+
+        Inline Elements
+            An inline element does not start on a new line.
+            An inline element only takes up as much width as necessary.
+
+
+
+        The <div> Element
+            The <div> element is by default a block element, meaning that it takes 
+            all available width, and comes with line breaks before and after.
+
+
+        Using The class Attribute
+            The class attribute is often used to point to a class name in a style sheet. 
+            It can also be used by a JavaScript to access and manipulate elements with 
+            the specific class name.
+
+            <div class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+
+            HTML Forms
+                An HTML form is used to collect user input. The user input is most often 
+                sent to a server for processing.
+
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+            </form>
+
+            The Action Attribute
+            The action attribute defines the action to be performed when the form is submitted.
+
+            The Target Attribute
+            The target attribute specifies where to display the response that is 
+            received after submitting the form.
+
+            The target attribute can have one of the following values:
+
+            _blank	    The response is displayed in a new window or tab
+            _self	    The response is displayed in the current window
+            _parent	    The response is displayed in the parent frame
+            _top	    The response is displayed in the full body of the window
+            framename	The response is displayed in a named iframe
+ -->
+
+<!-- 
+    simple HTML document covers all elements
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+     <title> TEST HTML PAGE </title>
+     <meta charset="UTF-8">
+     <meta name="description" content="Most of HTML5 tags">
+     <meta name="keywords" content="HTML5, tags">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ 
+ <body>
+     <header>
+         <nav>
+             <p>HEADER</p>
+             <menu type="context" id="navmenu">
+                 <menuitem label="Home" icon="icon.png"> <a href="#">Home</a> </menuitem>
+             </menu>
+         </nav>
+     </header>
+     <main>
+         <h1> Heading... </h1>
+         <h2> Heading... </h2>
+         <h3> Heading... </h3>
+         <h4> Heading... </h4>
+         <h5> Heading... </h5>
+         <h6> Heading... </h6>
+         <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae. <br>
+             <span> span </span>
+             <b>Bold word</b>
+             <i>italic</i>
+             <em>emphasis</em>
+             <mark>mark</mark>
+             <small> small </small>
+             <sub> sub </sub>
+             <sup> sup </sup>
+             <u> Statements... </u>
+             <abbr title="National Aeronautics and Space Administration">NASA</abbr>
+             <strike> strikethrough </strike>
+             <span><del> deprecated info </del> <ins> new info </ins> </span>
+             <s> not relevant </s>
+             <a href="#link">link</a>
+             <time datetime="2020-08-17 08:00">Monday at 8:00 AM</time>
+             <ruby>
+                 <rb>ruby base<rt>annotation
+             </ruby>
+             <br>
+             <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>CANC</kbd>
+         </p>
+     </main>
+ 
+     <p> This is a <q>short quote</q> </p>
+     <blockquote> This instead is a long quote that is going to use a lot of words and also cite who said that. —<cite>Some People</cite> </blockquote>
+ 
+     <ol>
+         <li><data value="21053">data tag</data></li>
+         <li><data value="23452">data tag</data></li>
+         <li><data value="42545">data tag</data></li>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+     </ol>
+ 
+     <ul>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+     </ul>
+ 
+     <hr>
+ 
+     <template>
+         <h2>Hidden content (after page loaded).</h2>
+     </template>
+ 
+     <video width="640" height="480" src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" controls>
+         <track kind="subtitles" src="subtitles_de.vtt" srclang="de">
+         <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+         <track kind="subtitles" src="subtitles_ja.vtt" srclang="ja">
+         
+     </video>
+ 
+
+ 
+     <pre>
+ 
+                                                                              _,'/
+                                                                     _.-''._:
+                                                     ,-:`-.-'    .:.|
+                                                  ;-.''       .::.|
+                     _..------.._  / (:.       .:::.|
+              ,'.   .. . .  .`/  : :.     .::::.|
+          ,'. .    .  .   ./    \ ::. .::::::.|
+      ,'. .  .    .   . /      `.,,::::::::.;\ tisjsjsj
+     /  .            . /       ,',';_::::::,:_:
+  / . .  .   .      /      ,',','::`--'':;._;
+ : .             . /     ,',',':::::::_:'_,'
+ |..  .   .   .   /    ,',','::::::_:'_,'
+ |.              /,-. /,',':::::_:'_,'
+ | ..    .    . /) /-:/,'::::_:',-'
+ : . .     .   // / ,'):::_:',' ;
+  \ .   .     // /,' /,-.','  ./
+     \ . .  `::./,// ,'' ,'   . /
+      `. .   . `;;;,/_.'' . . ,'
+         ,`. .   :;;' `:.  .  ,'
+      /   `-._,'  ..  ` _.-'
+     (     _,'``------'' 
+      `--''
+ 
+     </pre>
+
+                 <br>
+ 
+                 <audio controls>
+                     <source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.ogg" type="audio/ogg">
+                     <source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3" type="audio/mpeg">
+                 </audio>
+              
+                 <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A67HxeUADW4H3ERfaPW59ma?si=PogFcGg9QqapyoPbn2lVOw" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+ 
+                 <article>
+                     <header>
+                         <h2>Title of Article</h2>
+                         <span>by Arthur T. Writer</span>
+                     </header>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sollicitudin nisi, at convallis nunc semper et. Donec ultrices odio ac purus facilisis, at mollis urna finibus.</p>
+                     <figure>
+                         <img src="https://placehold.it/600x300" alt="placeholder-image">
+                         <figcaption> Caption.</figcaption>
+                     </figure>
+                     <footer>
+                         <dl> <dt>Published</dt>
+                             <dd>17 August 2020</dd> <dt>Tags</dt>
+                             <dd>Sample Posts, html example</dd>
+                         </dl>
+                     </footer>
+                 </article>
+ 
+                 <form>
+                     <fieldset>
+                         <legend>Personal Information</legend>
+                         <label for="name">Name</label><br>
+                         <input name="name" id="name"><br>
+                         <label for="dob">Date of Birth<label><br>
+                                 <input name="dob" id="dob" type="date">
+                     </fieldset>
+                 </form>
+ 
+                 <aside>
+                     <p> P inside ASIDE tag </p>
+                 </aside>
+                 <map name="shapesmap"> <area shape="rect" coords="29,32,230,215" href="#square" alt="Square"> <area shape="circle" coords="360,130,100" href="#circle" alt="Circle"> </map>
+ 
+                 <img src="https://placehold.it/100x100" alt="placeholder-image">
+ 
+                 <form action="" method="get">
+                     <label for="browser">Choose your browser from the list:</label>
+                     <input list="browsers" name="browser" id="browser">
+                     <datalist id="browsers">
+                         <option value="Edge">
+                         <option value="Firefox">
+                         <option value="Chrome">
+                         <option value="Opera">
+                         <option value="Safari">
+                     </datalist>
+                     <input type="submit">
+                 </form>
+ 
+                 <footer>
+                     <address> relevant contacts <a href="mailto:mail@example.com">mail</a>.</address>
+                     <div> created by <a href="https://blazardsky.space">@blazardsky</a></div>
+                 </footer>
+ 
+ </body>
+ 
+ </html>
+
